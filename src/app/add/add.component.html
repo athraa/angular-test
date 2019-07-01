@@ -1,0 +1,19 @@
+<div class="alert alert-danger" role="alert">
+  </div>
+  
+  <div class="card" >
+    <div class="card-header">
+      Add New Item
+    </div>
+
+    <div class="card-body">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter text" #text>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="description" #desc></textarea>
+            </div>
+            <button class="btn btn-primary" (click)="add(text.value,desc.value)"> Add </button>
+      </div>
+    
+  </div>

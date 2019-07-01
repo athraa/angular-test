@@ -1,0 +1,15 @@
+<div class="alert alert-danger" role="alert">
+</div>
+
+<div class="card" *ngFor="let l of list | async">
+  <div class="card-header">
+      {{l.payload.val().text}}
+  </div>
+
+  <div class="card-body">
+        {{l.payload.val().desc}}
+        <br>
+          <button class="btn btn-primary" (click)="showDetails(l.key,l.payload.val().text, l.payload.val().desc)"> show details </button>
+    </div>
+  
+</div>
